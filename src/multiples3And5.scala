@@ -19,7 +19,6 @@ object multiples3And5 {
     ResultWithTime(sum,endB-startB)
   }
 
-
   @tailrec
   def findNumbers(list:List[Int],sum:Int):Int={
     list match{
@@ -32,7 +31,7 @@ object multiples3And5 {
   def eligibleToSum(increment:Int): Int ={
     if (increment%3==0) increment
     else if (increment%5==0) increment
-    else if (increment%15==0) increment
+    else if (increment%15==0) -increment
     else 0
   }
 
